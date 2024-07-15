@@ -8,13 +8,14 @@ import { Link } from "react-router-dom";
 import { MdEmail } from "react-icons/md";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
+import FooterCook from '../assets/cook-cartoon.png'
 
 const Footer = () => {
   return (
     <div className="divide-y-2 divide-cream">
-      <footer className="w-full font-lato bg-green lg:bg-[url('../../src/assets/cook-cartoon.png')] bg-no-repeat bg-contain bg-right">
+      <footer className={`w-full font-lato flex bg-green `} >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="py-14 grid grid-cols-12 gap-x-5 gap-y-8 " >
+          <div className="py-14 grid grid-cols-10 gap-x-5 gap-y-8 " >
 
             {/* footer logo card */}
             <div className="col-span-full xl:col-span-3 relative bg-white rounded-2xl gap-12 p-6 xl:w-72 h-96 flex flex-col justify-center items-center shadow-[inset_2px_2px_10px_1px_rgba(0,0,0,0.6)]">
@@ -46,7 +47,7 @@ const Footer = () => {
             </div>
 
             {/* Get in touch */}
-            <div className="block text-center xl:text-left xl:py-16 col-span-full min-[500px]:col-span-6 md:col-span-4 xl:col-span-3 xl:pl-5">
+            <div className="block text-center md:mx-4 xl:text-left xl:py-16 col-span-full min-[500px]:col-span-6 md:col-span-4 xl:col-span-3 xl:pl-5">
               <h4 className="text-lg text-gray-900 font-bold mb-9">Get In Touch</h4>
               <ul className="text-gray-900 text-md transition-all duration-500 grid gap-3">
                   <li className="flex items-center gap-2"><MdEmail/>tastyeats@gmail.com</li>
@@ -75,7 +76,7 @@ const Footer = () => {
           
           </div>
         </div>
-
+        <img src={FooterCook} className="hidden lg:block lg:w-1/4" alt="" />
       </footer>
 
       {/* Copyright footer*/}
