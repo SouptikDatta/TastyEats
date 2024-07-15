@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
 import { IoCallOutline } from "react-icons/io5";
 import ContactImg from '../assets/Contact cartoon.png'
-import ContactBanner from '../assets/Contact Banner.avif'
+import ContactBanner from '../assets/Contact banner.avif'
 
 const Contact = () => {
     const form = useRef();
