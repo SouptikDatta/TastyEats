@@ -47,7 +47,7 @@ const AuthProvider = ({children}) => {
         if (currentUser) {
           const userInfo = { email: currentUser.email };
           try {
-            const response = await axios.post('http://localhost:6001/jwt', userInfo);
+            const response = await axios.post('https://tastyeats-server.onrender.com//jwt', userInfo);
             if (response.data.token) {
               localStorage.setItem("access-token", response.data.token);
             }

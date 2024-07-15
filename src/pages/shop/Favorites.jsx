@@ -26,7 +26,7 @@ const Favorites = () => {
       };
 
       try {
-        const response = await fetch('http://localhost:6001/carts', {
+        const response = await fetch('https://tastyeats-server.onrender.com//carts', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

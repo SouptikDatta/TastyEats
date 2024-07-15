@@ -12,7 +12,7 @@ const useFavorites = () => {
             if (!user?.email) {
                 throw new Error('User email is not available');
             }
-            const res = await fetch(`http://localhost:6001/favorites?email=${user?.email}`, {
+            const res = await fetch(`https://tastyeats-server.onrender.com//favorites?email=${user?.email}`, {
                 headers: {
                     authorization: `Bearer ${token}`
                 }

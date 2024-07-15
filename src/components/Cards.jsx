@@ -23,7 +23,7 @@ const Cards = ({ item, isFavorite, refetchFavorites,favoriteId }) => {
     if(user && user.email){
         const cartItem = {menuItemId: _id, name, quantity : 1, image, price, email: user.email}
 
-        axios.post('http://localhost:6001/carts', cartItem)
+        axios.post('https://tastyeats-server.onrender.com//carts', cartItem)
         .then((response) => {
           console.log(response);
           if(response){
@@ -71,7 +71,7 @@ const Cards = ({ item, isFavorite, refetchFavorites,favoriteId }) => {
     if (user && user.email) {
       const favoriteItem = { menuItemId: _id, name, image, price, email: user.email };
       try {
-        const response = await axios.post('http://localhost:6001/favorites', favoriteItem, {
+        const response = await axios.post('https://tastyeats-server.onrender.com//favorites', favoriteItem, {
             headers: {
               Authorization: `Bearer ${token}`,
             },
@@ -119,7 +119,7 @@ const Cards = ({ item, isFavorite, refetchFavorites,favoriteId }) => {
   const handleRemoveFromFavorites = async () => {
     if (user && user.email) {
       try {
-        const response = await axios.delete(`http://localhost:6001/favorites/${favoriteId}`, {
+        const response = await axios.delete(`https://tastyeats-server.onrender.com//favorites/${favoriteId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           }
