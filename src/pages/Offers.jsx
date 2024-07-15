@@ -15,9 +15,9 @@ import Tiramisu from '../assets/Italian Cuisine/Tiramisu.jpg';
 
 import FriedRice from '../assets/Chinese Cuisine/Fried rice.jpg';
 import Dumplings from '../assets/Chinese Cuisine/Dumplings.jpg';
-import SweetAndSourPork from '../assets/Chinese Cuisine/Sweet and Sour Pork.jpg';
+import SweetAndSourPork from '../assets/Chinese Cuisine/Sweet and Sour pork.jpg';
 import KungPaoChicken from '../assets/Chinese Cuisine/Kung Pao Chicken.jpg';
-import SpringRolls from '../assets/Chinese Cuisine/Spring Rolls.jpg';
+import SpringRolls from '../assets/Chinese Cuisine/Spring rolls.jpg';
 
 
 const Offers = () => {
