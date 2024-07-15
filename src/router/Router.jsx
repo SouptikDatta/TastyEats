@@ -106,7 +106,7 @@ const router = createBrowserRouter([
       {
         path: 'update-menu/:id', 
         element: <UpdateMenu/>,
-        loader: ({params}) => fetch(`https://tastyeats-server.onrender.com//menu/${params.id}`)
+        loader: ({params}) => fetch(`https://tastyeats-server.onrender.com/menu/${params.id}`)
       },
       {
         path: 'manage-bookings',

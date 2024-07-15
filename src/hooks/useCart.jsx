@@ -14,7 +14,7 @@ const useCart = () => {
                 throw new Error('User email is not available');
             }
         
-            const res = await fetch(`https://tastyeats-server.onrender.com//carts?email=${user?.email}`, {
+            const res = await fetch(`https://tastyeats-server.onrender.com/carts?email=${user?.email}`, {
                 headers: {
                     authorization: `Bearer ${token}`
                 }

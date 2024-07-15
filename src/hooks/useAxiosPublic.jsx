@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const axiosPublic =  axios.create({
-    baseURL: 'https://tastyeats-server.onrender.com/',
+    baseURL: 'https://tastyeats-server.onrender.com',
   })
 
 const useAxiosPublic = () => {

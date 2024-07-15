@@ -20,7 +20,7 @@ const Catagories = () => {
     // Fetch data from the backend API
     const fetchCategoryCounts = async () => {
       try {
-        const response = await fetch('https://tastyeats-server.onrender.com//menu/count/all');
+        const response = await fetch('https://tastyeats-server.onrender.com/menu/count/all');
         const data = await response.json();
         // Map the counts to your category items
         const categories = [

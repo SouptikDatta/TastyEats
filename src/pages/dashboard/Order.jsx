@@ -11,7 +11,7 @@ const Order = () => {
   const { refetch, data: orders = [] } = useQuery({
     queryKey: ['orders', user?.email],
     queryFn: async () => {
-      const res = await fetch(`https://tastyeats-server.onrender.com//payments?email=${user?.email}`, {
+      const res = await fetch(`https://tastyeats-server.onrender.com/payments?email=${user?.email}`, {
         headers: {
           authorization: `Bearer ${token}`
         }
@@ -40,7 +40,7 @@ const Order = () => {
     e.preventDefault();
     const orderId = selectedOrder._id;
     try {
-      const response = await fetch('https://tastyeats-server.onrender.com//payments/submit-feedback', {
+      const response = await fetch('https://tastyeats-server.onrender.com/payments/submit-feedback', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

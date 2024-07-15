@@ -13,7 +13,7 @@ const SpecialDishes = () => {
   const [favorites, refetch] = useFavorites();
 
   useEffect(() => {
-    fetch("https://tastyeats-server.onrender.com//menu")
+    fetch("https://tastyeats-server.onrender.com/menu")
       .then((res) => res.json())
       .then((data) => {
         const specials = data.filter((item) => item.category === "popular");

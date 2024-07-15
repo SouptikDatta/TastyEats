@@ -32,7 +32,7 @@ const Modal = () => {
             name: data.name,
             email: data.email,
           };
-          axios.post("https://tastyeats-server.onrender.com//users", userInfo)
+          axios.post("https://tastyeats-server.onrender.com/users", userInfo)
             .then((response) => {
               console.log(response);
               alert("Signin successful!");
@@ -59,7 +59,7 @@ const Modal = () => {
             name: result?.user?.displayName,
             email: result?.user?.email,
           };
-          axios.post("https://tastyeats-server.onrender.com//users", userInfor)
+          axios.post("https://tastyeats-server.onrender.com/users", userInfor)
             .then((response) => {
               console.log(response);
               alert("Signin successful!");
